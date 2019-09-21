@@ -1,29 +1,83 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-card
+    flat
+    height="50px"
+    >
+      <v-app-bar dense height="50px">
+
+        <v-btn icon @click.stop="drawer = !drawer">
+          <v-app-bar-nav-icon></v-app-bar-nav-icon>
+        </v-btn>
+        <v-toolbar-title class="headline text-uppercase">
+          <span>Navigation</span>
+
+        </v-toolbar-title>
+        <div class="flex-grow-1"></div>
+        <span class="headline text-uppercase">Roll Initiative</span>
+        <div class="flex-grow-1"></div>
+        <v-btn
+          text
+          href="https://github.com/vuetifyjs/vuetify/releases/latest"
+          target="_blank"
+        >Latest ReleasE
+        </v-btn>
+      </v-app-bar>
+    </v-card>
+  <v-navigation-drawer v-model="drawer" absolute temporary>
+    <v-list>
+      <v-list-item href="http://rngdiscord.tk">
+        <v-list-item-title class="title">Discord
+          <v-icon>mdi-discord</v-icon>
+        </v-list-item-title>
+      </v-list-item>
+      <v-divider/>
+      <v-list-item
+        v-for="(item, i) in views"
+        :key="i"
+        link
+        :to="item.path"
+      >
+        <v-list-item-title>{{ item.title }}</v-list-item-title>
+      </v-list-item>
+    </v-list>
+  </v-navigation-drawer>
+  <v-content>
+    <v-container>
+      <router-view></router-view>
+    </v-container>
+  </v-content>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+<script>
+
+export default {
+  name: 'App',
+  components: {
+    // HelloWorld,
+  },
+  data: () => ({
+    drawer: null,
+    views: [
+      {
+        title: "Home",
+        path: './',
+      },
+      {
+        title: 'About Us',
+        path: './about',
+      },
+      {
+        title: 'Media',
+        path: './media',
+      },
+      {
+        title: 'Games',
+        path: './games',
+      },
+    ]
+    //
+  }),
+};
+</script>
