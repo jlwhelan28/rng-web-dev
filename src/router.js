@@ -23,5 +23,10 @@ export default new Router({
       path: '/games',
       component: () => import('./components/GameDescription.vue'),
     },
+    {
+      // Catch all at lowest matching priority to 404 bad URLS
+      path: '*',
+      component: () => import('./components/NotFound.vue')
+    },
   ]
 })
