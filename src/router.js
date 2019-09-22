@@ -20,6 +20,8 @@ export default new Router({
       component: () => import('./components/GuildDescription.vue')
     },
     {
+      path: '/:gametitle',
+      component: () => import('./components/GameDetail.vue'),
     },
     {
       // Catch all at lowest matching priority to 404 bad URLS
