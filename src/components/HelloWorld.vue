@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import Games from "./GameDescription.vue"
+import Games from "./Games.vue"
 
 export default {
   components: {

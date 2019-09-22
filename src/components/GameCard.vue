@@ -4,7 +4,7 @@
     :elevation="hover ? 20 : 2"
     :class="{ 'on-hover': hover }"
     >
-      <v-img :src="art" :key="id" class="fill-height">
+      <v-img :src="require('@/assets/' + art)" :key="id" class="fill-height">
         <div class="align-self-center">
           <v-btn
             :class="{ 'show-btns': 'hover'}"

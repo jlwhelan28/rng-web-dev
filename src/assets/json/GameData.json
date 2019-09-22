@@ -1,0 +1,53 @@
+[
+  {
+    "title": "Archeage Unchained",
+    "banner": "../archeage_unchained_banner.jpg",
+    "art": "archeage_unchained_art.jpg",
+    "desc": "we will be playing this",
+    "status": "Active",
+    "url": "archeage-unchained",
+    "docsurl": "./"
+  },
+  {
+    "title": "Elder Scrolls Online",
+    "banner": "./assets/eso_banner.jpg",
+    "art": "eso_art.jpg",
+    "desc": "we played this",
+    "status": "Semi-Active",
+    "url": "./",
+    "docsurl": "./"
+  },
+  {
+    "title": "Guild Wars 2",
+    "banner": "./assets/gw2_banner.jpg",
+    "art": "gw2_art.jpg",
+    "desc": "we played this",
+    "status": "Archives",
+    "url": "./",
+    "docsurl": "./"
+  },
+  {
+    "title": "Archeage",
+    "banner": "./assets/archeage_banner.jpg",
+    "art": "archeage_art.jpg",
+    "desc": "we played this",
+    "status": "Archives",
+    "url": "./",
+    "docsurl": "./"
+  },
+  {
+    "title": "Star Citizen",
+    "banner": "",
+    "art": "star_citizen_art.jpg",
+    "status": "Future",
+    "url": "./",
+    "docsurl": "./"
+  },
+  {
+    "title": "Camelot Unchained",
+    "art": "cu_art.jpg",
+    "status": "Future",
+    "url": "./",
+    "docsurl": "./"
+  }
+]

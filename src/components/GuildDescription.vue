@@ -17,11 +17,11 @@
 </template>
 
 <script>
-import GameDescription from "./GameDescription.vue"
+import Games from "./Games.vue"
 export default {
   data: () => ({
     components: {
-      GameDescription,
+      Games,
     }
   }),
 };
