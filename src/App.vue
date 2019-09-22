@@ -72,10 +72,6 @@ export default {
         title: 'Media',
         path: './media',
       },
-      {
-        title: 'Games',
-        path: './games',
-      },
     ]
     //
   }),
