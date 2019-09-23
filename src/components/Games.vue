@@ -8,7 +8,6 @@
         v-bind:title="game.title"
         v-bind:status="game.status"
         v-bind:url="game.url"
-        v-bind:docsurl="game.docsurl"
         v-bind:art="game.art"
         />
       </v-col>

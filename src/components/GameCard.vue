@@ -18,22 +18,7 @@
               size=40
               color="transparent"
             >
-            mdi-play
-            </v-icon>
-        </v-btn>
-          <v-btn
-            :class="{ 'show-btns': 'hover'}"
-            color="transparent"
-            icon
-            link
-            :to="docsurl"
-          >
-            <v-icon
-              :class="{ 'show-btns': hover }"
-              size=40
-              color="transparent"
-            >
-            mdi-file-document
+            mdi-expand-all-outline
             </v-icon>
           </v-btn>
         </div>
