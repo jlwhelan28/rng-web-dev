@@ -13,6 +13,42 @@
     "art": "eso_art.jpg",
     "desc": "we played this",
     "status": "Semi-Active",
+    "url": "elder-scrolls-online",
+    "media": [
+      {
+        "url": "https://www.youtube.com/watch?v=fASZBS_oXzg&t=54s"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=_hhVPUCtSy8"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=t7tC4EZuXmU"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=mFGmaLdWdmk&t=311s"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Nrkfes9eOOM&t=166s"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=7iltoLKPR7k&t=106s"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=nodnZECNJiM&t=1s"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=FomnZzNEVRI"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=hMnxA4DG8Fg&t=162s"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=PN3snsV9VRI"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=_mguZ19NIj8"
+      }
+    ]
   },
   {
     "title": "Guild Wars 2",
