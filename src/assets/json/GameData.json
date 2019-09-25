@@ -5,7 +5,13 @@
     "art": "archeage_unchained_art.jpg",
     "desc": "we will be playing this",
     "status": "Active",
-    "url": "archeage-unchained"
+    "url": "archeage-unchained",
+    "documents": [
+      {
+        "title": "Archeage Unchained Class Roll List",
+        "url": "https://docs.google.com/spreadsheets/d/1CBRWJ3vyYVKxMbejqZbM5cGcbjE_Cqz6MrdeRbCoQH8/edit#gid=0"
+      }
+    ]
   },
   {
     "title": "Elder Scrolls Online",

@@ -31,14 +31,24 @@
           </v-card>
         </v-col>
         <v-col cols=6>
-          <v-list v-if="info.documents">
-            <v-list-item v-for="(document, index) in info.documents">
-              <v-list-item-content>
-                <v-list-item-title v-text="document.title"/>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-          <h1 v-else class="display-2 secondary--text">No public documents (yet!)</h1>
+          <v-card tile class="mx-auto">
+            <v-toolbar color="green" dark>
+              <v-toolbar-title>Documents from {{ info.title }}</v-toolbar-title>
+            </v-toolbar>
+            <v-list v-if="info.documents" two-line>
+              <div v-for="(document, index) in info.documents" :key="index">
+                <v-list-item v-for="(document, index) in info.documents" :href="document.url">
+                  <v-list-item-avatar>
+                    <v-img contain :src="require('@/assets/sheets.jpg')"></v-img>
+                  </v-list-item-avatar>
+                  <v-list-item-content>
+                    <v-list-item-title v-text="document.title"/>
+                  </v-list-item-content>
+                </v-list-item>
+              </div>
+            </v-list>
+            <h1 v-else class="display-2 secondary--text">No public documents (yet!)</h1>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
