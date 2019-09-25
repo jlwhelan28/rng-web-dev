@@ -11,10 +11,11 @@
         </v-btn>
         <v-toolbar-title class="headline text-uppercase">
           <span>Navigation</span>
-
         </v-toolbar-title>
         <div class="flex-grow-1"></div>
-        <span class="headline text-uppercase">Roll Initiative</span>
+        <v-btn text to="/" exact>
+          <v-toolbar-title class="headline text-uppercase">Roll Initiative</v-toolbar-title>
+        </v-btn>
         <div class="flex-grow-1"></div>
         <v-btn
           text
