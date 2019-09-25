@@ -16,7 +16,7 @@
     "url": "elder-scrolls-online",
     "media": [
       {
-        "url": "https://www.youtube.com/watch?v=fASZBS_oXzg&t=54s"
+        "url": "https://www.youtube.com/watch?v=fASZBS_oXzg"
       },
       {
         "url": "https://www.youtube.com/watch?v=_hhVPUCtSy8"
@@ -25,22 +25,22 @@
         "url": "https://www.youtube.com/watch?v=t7tC4EZuXmU"
       },
       {
-        "url": "https://www.youtube.com/watch?v=mFGmaLdWdmk&t=311s"
+        "url": "https://www.youtube.com/watch?v=mFGmaLdWdmk"
       },
       {
-        "url": "https://www.youtube.com/watch?v=Nrkfes9eOOM&t=166s"
+        "url": "https://www.youtube.com/watch?v=Nrkfes9eOOM"
       },
       {
-        "url": "https://www.youtube.com/watch?v=7iltoLKPR7k&t=106s"
+        "url": "https://www.youtube.com/watch?v=7iltoLKPR7k"
       },
       {
-        "url": "https://www.youtube.com/watch?v=nodnZECNJiM&t=1s"
+        "url": "https://www.youtube.com/watch?v=nodnZECNJiM"
       },
       {
         "url": "https://www.youtube.com/watch?v=FomnZzNEVRI"
       },
       {
-        "url": "https://www.youtube.com/watch?v=hMnxA4DG8Fg&t=162s"
+        "url": "https://www.youtube.com/watch?v=hMnxA4DG8Fg"
       },
       {
         "url": "https://www.youtube.com/watch?v=PN3snsV9VRI"
@@ -56,7 +56,48 @@
     "art": "gw2_art.jpg",
     "desc": "we played this",
     "status": "Archives",
-    "url": "guild-wars-2"
+    "url": "guild-wars-2",
+    "media": [
+      {
+        "url": "https://www.youtube.com/watch?v=A7s4WsO7_RM"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=ziASrG5eWWM"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=8zEVNyWpNvc"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=3WJuzwc_wMg"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=nKKXMax706M"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=XoxZabBp5Mk"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=IzFkokteJKg"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=zQRHNe9IpwU"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=aqxuCEwcwZo"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=A1XprzW7Mks"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=1eAQqDL3m60"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=ozfecqF1lQQ"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=IT6DcYXmgwk"
+      }
+    ]
   },
   {
     "title": "Archeage",
@@ -64,7 +105,15 @@
     "art": "archeage_art.jpg",
     "desc": "we played this",
     "status": "Archives",
-    "url": "archeage"
+    "url": "archeage",
+    "media": [
+      {
+        "url": "https://www.youtube.com/watch?v=Ruihn0akjjA"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=nq_dBsq-PNo"
+      }
+    ]
   },
   {
     "title": "Star Citizen",
