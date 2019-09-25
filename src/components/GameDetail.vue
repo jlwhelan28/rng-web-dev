@@ -14,8 +14,8 @@
               <v-toolbar-title>Media from {{ info.title }}</v-toolbar-title>
             </v-toolbar>
             <v-list v-if="videos" two-line>
-              <div v-for="(item, index) in videos">
-                <v-list-item @click="">
+              <div v-for="(item, index) in videos" :key="index">
+                <v-list-item :href="info.media[index].url">
                   <v-list-item-avatar>
                     <v-img :src="item.snippet.thumbnails.high.url"></v-img>
                   </v-list-item-avatar>
@@ -56,24 +56,6 @@ const axios = require('axios');
 export default {
   created () {
     this.fetchData()
-    if (this.info) {
-      let idlist = ""
-      for (let item of this.info.media) {
-        idlist = idlist + "," + item.url.split("?v=")[1].split("&")[0]
-      }
-      axios.get("https://www.googleapis.com/youtube/v3/videos", {
-        "params": {
-          "part": "snippet",
-          "id": idlist,
-          "key": this.$YOUTUBE_API_KEY,
-        }
-      }).then((response) => {
-        console.log(response)
-        this.videos = response.data.items
-      }).catch((error) => {
-        console.log(error)
-      })
-    }
   },
   data: () => ({
     info: null,
@@ -88,7 +70,30 @@ export default {
       if (this.info === undefined) {
         this.error = "404"
       }
+    },
+    fetchVideoData() {
+      if (this.info) {
+        let idlist = ""
+        for (let item of this.info.media) {
+          idlist = idlist + "," + item.url.split("?v=")[1].split("&")[0]
+        }
+      axios.get("https://www.googleapis.com/youtube/v3/videos", {
+        "params": {
+          "part": "snippet",
+          "id": idlist,
+          "key": this.$YOUTUBE_API_KEY,
+        }
+      }).then((response) => {
+        console.log(response)
+        this.videos = response.data.items
+      }).catch((error) => {
+        console.log(error)
+      })
+      }
     }
+  },
+  mounted () {
+    this.fetchVideoData()
   },
   watch: {
     '$route': 'fetchData'
