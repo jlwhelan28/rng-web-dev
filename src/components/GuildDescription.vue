@@ -10,9 +10,6 @@
         </v-list>
       </p>
     </v-card>
-    <v-card>
-      <GameDescription/>
-    </v-card>
   </v-container>
 </template>
 

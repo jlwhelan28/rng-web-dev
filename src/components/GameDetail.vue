@@ -53,7 +53,7 @@
       </v-row>
     </v-container>
     <div v-if="error">
-      {{ error }}
+      <NotFound/>
     </div>
   </div>
 
@@ -61,11 +61,15 @@
 
 <script>
 import GameData from "@/assets/json/GameData.json"
+import NotFound from "./NotFound.vue"
 
 const axios = require('axios');
 export default {
   created () {
     this.fetchData()
+  },
+  components: {
+    NotFound
   },
   data: () => ({
     info: null,
@@ -78,7 +82,7 @@ export default {
     fetchData() {
       this.info = GameData.find(el => el.url === this.$route.params.gametitle)
       if (this.info === undefined) {
-        this.error = "404"
+        this.error = true
       }
     },
     fetchVideoData() {
